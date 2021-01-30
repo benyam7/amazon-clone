@@ -6,12 +6,19 @@ import ShoppingBasketIcon from "@material-ui/icons/ShoppingBasket";
 
 import "./Header.css";
 import { useStateValue } from "../../context/StateProvider";
+import { auth } from "../../firebase/firebase";
 const Header = () => {
   // logo on left -> mage
   // search box
   // 3 links
   // basket icon with number
-  const [{ basket }] = useStateValue();
+  const [{ basket, user }] = useStateValue();
+
+  const login = () => {
+    if (user) {
+      auth.signOut();
+    }
+  };
   return (
     <nav className="header">
       <Link to="/login">
@@ -27,10 +34,12 @@ const Header = () => {
       </div>
 
       <div className="header__nav">
-        <Link to="/login" className="header__link">
+        <Link to={!user && "/login"} className="header__link">
           <div className="header__option">
-            <span className="header__optionLineOne">Hello </span>
-            <span className="header__opitonLineTwo">Sign In</span>
+            <span className="header__optionLineOne">Hello {user?.email} </span>
+            <span onClick={login} className="header__opitonLineTwo">
+              {user ? "Sign Out" : "Sign In"}
+            </span>
           </div>
         </Link>
 
