@@ -11,13 +11,58 @@ const Home = () => {
         alt="Banner "
       />
 
-      <Product
-        id={12}
-        title="Apple 13.3 MacBook Pro w/Touch Bar (Mid 2019), Intel Core i5-8279U 2.4GHz, 512GB PCI-E SSD, 8GB DDR3, 802.11ac, Silver (Renewed)"
-        rating={4}
-        image="https://images-na.ssl-images-amazon.com/images/I/51jckVG7HeL._AC_SY355_.jpg"
-        price="	1,075.00"
-      />
+      <div className="home__row">
+        <Product
+          id={12}
+          title="Apple 13.3 MacBook Pro w/Touch Bar (Mid 2019), Intel Core i5-8279U 2.4GHz, 512GB PCI-E SSD, 8GB DDR3, 802.11ac, Silver (Renewed)"
+          rating={4}
+          image="https://images-na.ssl-images-amazon.com/images/I/51jckVG7HeL._AC_SY355_.jpg"
+          price="	1,075.00"
+        />
+
+        <Product
+          id={12}
+          title="Apple 13.3 MacBook Pro w/Touch Bar (Mid 2019), Intel Core i5-8279U 2.4GHz, 512GB PCI-E SSD, 8GB DDR3, 802.11ac, Silver (Renewed)"
+          rating={4}
+          image="https://images-na.ssl-images-amazon.com/images/I/51jckVG7HeL._AC_SY355_.jpg"
+          price="	1,075.00"
+        />
+      </div>
+
+      <div className="home__row">
+        <Product
+          id={12}
+          title="Apple 13.3 MacBook Pro w/Touch Bar (Mid 2019), Intel Core i5-8279U 2.4GHz, 512GB PCI-E SSD, 8GB DDR3, 802.11ac, Silver (Renewed)"
+          rating={4}
+          image="https://images-na.ssl-images-amazon.com/images/I/51jckVG7HeL._AC_SY355_.jpg"
+          price="	1,075.00"
+        />
+
+        <Product
+          id={12}
+          title="Apple 13.3 MacBook Pro w/Touch Bar (Mid 2019), Intel Core i5-8279U 2.4GHz, 512GB PCI-E SSD, 8GB DDR3, 802.11ac, Silver (Renewed)"
+          rating={4}
+          image="https://images-na.ssl-images-amazon.com/images/I/51jckVG7HeL._AC_SY355_.jpg"
+          price="	1,075.00"
+        />
+        <Product
+          id={12}
+          title="Apple 13.3 MacBook Pro w/Touch Bar (Mid 2019), Intel Core i5-8279U 2.4GHz, 512GB PCI-E SSD, 8GB DDR3, 802.11ac, Silver (Renewed)"
+          rating={4}
+          image="https://images-na.ssl-images-amazon.com/images/I/51jckVG7HeL._AC_SY355_.jpg"
+          price="	1,075.00"
+        />
+      </div>
+
+      <div className="home__row">
+        <Product
+          id={12}
+          title="Apple 13.3 MacBook Pro w/Touch Bar (Mid 2019), Intel Core i5-8279U 2.4GHz, 512GB PCI-E SSD, 8GB DDR3, 802.11ac, Silver (Renewed)"
+          rating={4}
+          image="https://images-na.ssl-images-amazon.com/images/I/51jckVG7HeL._AC_SY355_.jpg"
+          price="	1,075.00"
+        />
+      </div>
     </div>
   );
 };
